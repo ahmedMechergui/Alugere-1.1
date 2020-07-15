@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#initializeFields" prefHeight="525.0" prefWidth="424.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerEntreprise">
+   <children>
+      <ImageView fitHeight="138.0" fitWidth="146.0" layoutX="131.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="textAdresse" labelFloat="true" layoutX="38.0" layoutY="160.0" maxHeight="-Infinity" prefWidth="353.0" promptText="Adresse :" unFocusColor="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="textRue" labelFloat="true" layoutX="38.0" layoutY="221.0" maxHeight="-Infinity" prefWidth="353.0" promptText="Rue :" unFocusColor="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="textEmail" labelFloat="true" layoutX="39.0" layoutY="284.0" prefWidth="353.0" promptText="Email :" unFocusColor="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="texttelephone1" labelFloat="true" layoutX="36.0" layoutY="345.0" prefWidth="353.0" promptText="Telephone 1:" unFocusColor="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="texttelephone2" labelFloat="true" layoutX="36.0" layoutY="406.0" prefWidth="353.0" promptText="Telephone 2 :" unFocusColor="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="buttonValider" layoutX="145.0" layoutY="467.0" onAction="#validerButtonClicked" prefHeight="27.0" prefWidth="129.0" style="-fx-background-color: #4785C0;" text="Valider" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="buttonAnnuler" layoutX="289.0" layoutY="467.0" onAction="#buttonAnnulerClicked" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: #4785C0;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

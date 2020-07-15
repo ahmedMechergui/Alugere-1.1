@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="240.0" prefWidth="500.0" style="-fx-background-color: #2C2C2C; -fx-border-width: 7; -fx-border-color: #9E7F37;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerProduit">
+   <children>
+      <JFXTextField fx:id="textDesignation" labelFloat="true" layoutX="31.0" layoutY="30.0" onAction="#annulerButtonClicked" prefHeight="31.0" prefWidth="503.0" promptText="Designation" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" unFocusColor="#486a73">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="31.0" layoutY="85.0" prefHeight="21.0" prefWidth="195.0" text="Prix initial par couleur :" textFill="#cdcaca">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="textBlanc" labelFloat="true" layoutX="31.0" layoutY="126.0" prefHeight="31.0" prefWidth="94.0" promptText="Blanc" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" />
+      <JFXTextField fx:id="textNoir" labelFloat="true" layoutX="144.0" layoutY="126.0" prefHeight="31.0" prefWidth="94.0" promptText="Noir" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" />
+      <JFXTextField fx:id="textGris" labelFloat="true" layoutX="255.0" layoutY="126.0" prefHeight="31.0" prefWidth="94.0" promptText="Gris" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" />
+      <JFXTextField fx:id="textFauxBois" labelFloat="true" layoutX="368.0" layoutY="126.0" prefHeight="31.0" prefWidth="94.0" promptText="Faux bois" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" />
+      <JFXTextField fx:id="textAddPerMetreBlanc" labelFloat="true" layoutX="31.0" layoutY="210.0" prefHeight="31.0" prefWidth="94.0" promptText="Blanc" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" />
+      <JFXTextField fx:id="textAddPerMetreNoir" labelFloat="true" layoutX="144.0" layoutY="210.0" prefHeight="31.0" prefWidth="94.0" promptText="Noir" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" />
+      <JFXTextField fx:id="textAddPerMetreGris" labelFloat="true" layoutX="255.0" layoutY="210.0" prefHeight="31.0" prefWidth="94.0" promptText="Gris" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" />
+      <JFXTextField fx:id="textAddPerMetreFauxBois" labelFloat="true" layoutX="368.0" layoutY="210.0" prefHeight="31.0" prefWidth="94.0" promptText="Faux bois" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" />
+      <JFXButton fx:id="buttonAjouter" layoutX="399.0" layoutY="243.0" onAction="#AjouterButtonClicked" text="Ajouter">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.6407766990291262" endY="0.8932038834951457">
+               <stops>
+                  <Stop color="#1942e4" />
+                  <Stop color="#ff5a5a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <Label layoutX="31.0" layoutY="169.0" prefHeight="21.0" prefWidth="254.0" text="Addition par metre² par couleur :" textFill="#cdcaca">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="buttonAnnuler" layoutX="474.0" layoutY="243.0" onAction="#annulerButtonClicked" text="Annuler">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1942e4" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>

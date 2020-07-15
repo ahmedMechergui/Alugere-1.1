@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Document</title>
+
+<style>
+    img {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .numDevis{
+                font-size: 27px;
+                letter-spacing: 5px;
+    }
+
+    .cadre {
+                position: relative;
+                text-align: center;
+             /*   border:1.5px solid #CE811E; */
+                width: 270px;
+                padding: 15px;
+                padding-bottom: 8px;
+                position: relative;
+                margin-left: 450px;
+                top: 75px;
+                font-weight: bold;
+                font-family:Arial;
+                line-height: 20px;
+    }
+
+    .entrepriseInfo {
+            position: absolute;
+            top: 150px;
+            left: 64px;
+            font-weight:500;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            
+    }
+
+    .devisNumDate {
+        display: inline;
+        font-size: 17px;
+    }
+
+    .imageTableCover {
+        /* 
+        t8atti biha el table li fel taswira
+        */
+
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 250px;
+        left: 0;
+        top: 350px;
+        opacity: 1;
+    } 
+
+    .tableUp table,th,td {
+        border-collapse: collapse;
+        border:1.5px solid #D8D8D8;
+        text-align: center;
+    }
+
+
+    .tableUp{
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 397px;
+        opacity: 1;
+font-family: Arial;    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    .tableUp tr {
+        height: 43px;
+    }
+
+    .tableDown  {
+        margin-left: 500px;
+        margin-top: 133px;
+        font-family: Arial;
+       
+
+    }
+
+    .tableDown td{
+        width: 168px;
+        text-align: left;
+    }
+
+    .tableDown tr{
+        height: 43px;
+    }
+
+    .tableDown td {
+        border:none;
+    }
+
+    .box {
+        width: 100%;
+        border: 1px solid transparent;
+        height: 395px;
+    }
+
+    footer {
+        color: lightgray;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+    }
+
+</style>
+</head>
+<body>
+    
+<img src="bg.png" alt="image"></img>
+
+<div class="cadre">
+ 
+<span class="numDevis">DEVIS N°<span id="year">2020</span>-0012</span>
+<div class="devisNumDate">
+<br />
+Realisé le: <span id="date">16/01/2020</span>
+    <br />
+    Devis valable 30 jours
+</div>
+</div>
+
+
+<div class="entrepriseInfo">
+    Ain mariem Nº 31<br />
+    Rue Boukhris, Bizerte7000<br />
+    lchoix98@gmail.com<br />
+     (+216) 22 215 791<br />
+     (+216) 95 230 229 
+ </div>
+
+<div class="imageTableCover"></div><table class="tableUp">
+    <tr>
+        <th style="width:117px;">Référence</th>
+        <th style="width:335px;">Désignation</th>
+        <th style="width:92px">Qté</th>
+        <th style="width:140px">Prix unitaire HT</th>
+        <th>Montant HT</th>
+    </tr><tr>
+        <td>A81</td>
+        <td>Porte fenetre(60 cm / 50 cm)</td>
+        <td>6</td>
+        <td>144.000 dt</td>
+        <td>864.000 dt</td>
+    </tr></table>
+ <div class="box"></div>
+<table class="tableDown">
+    <tr>
+        <td>Total HT</td>
+        <td>864.000 dt</td>
+    </tr>
+    <tr>
+        <td>TVA à 19%</td>
+        <td>164.100 dt</td>
+    </tr>
+    <tr style="font-weight: bold;">
+        <td>Total TTC</td>
+        <td>1028.100 dt</td>
+    </tr>
+</table>
+</body>
+</html>

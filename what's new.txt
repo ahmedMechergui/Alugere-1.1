@@ -1,0 +1,2 @@
+- walla ye7seb prix initial + addition par mettre ba3d ma ken ye7seb prix * dimensions
+- fixed bug : ki fel ajout wela fi modifier t7awel tvalidi ma8ir ma tekteb designation ma3ach yecrashi  (fixed in previous version too) 

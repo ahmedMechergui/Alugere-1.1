@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #2C2C2C; -fx-border-width: 4; -fx-border-color: #9E7F37;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChangerTVAController">
+   <children>
+      <JFXTextField fx:id="textTVA" labelFloat="true" layoutX="22.0" layoutY="30.0" prefHeight="42.0" prefWidth="242.0" promptText="Nouveaux valeur TVA" style="-fx-background-color: #424242; -fx-text-inner-color: #44BBED; -fx-prompt-text-fill: #44BBED;" unFocusColor="#486a73">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="buttonAnnuler" layoutX="178.0" layoutY="76.0" onAction="#buttonAnnulerClicked" text="Annuler">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.6407766990291262" endY="0.8932038834951457">
+               <stops>
+                  <Stop color="#1942e4" />
+                  <Stop color="#ff5a5a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton fx:id="buttonChanger" layoutX="96.0" layoutY="76.0" onAction="#changerButtonClicked" text="Changer">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1942e4" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+   </children>
+</AnchorPane>

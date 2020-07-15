@@ -1,0 +1,49 @@
+.label-bold{
+    -fx-font-weight: bold;
+}
+
+
+/*.button-border {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-font-family: "Lucida Sans Unicode";
+}
+.button-border:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}*/
+.button-border {
+    -fx-font-weight:bolder;
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+
+    -fx-text-fill: #2b0100;
+    -fx-font-family: Consolas;
+    -fx-font-size: 13pt;
+
+}
+
+#my-table .table-column {
+    -fx-alignment: CENTER;
+}
+
+#my-tableHidden .table-column {
+    -fx-text-fill:white;
+
+}
+
+.buton-rounded {
+
+    -fx-background-color: #efefef;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.combobox-style{
+-fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
